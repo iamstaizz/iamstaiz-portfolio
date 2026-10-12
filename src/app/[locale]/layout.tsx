@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Unbounded, Onest, JetBrains_Mono } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
+import { SiteHeader } from "@/components/site-header";
 
 const display = Unbounded({
   subsets: ["latin", "cyrillic"],
@@ -52,7 +53,10 @@ export default async function LocaleLayout({ children, params }: Props) {
       className={`${display.variable} ${sans.variable} ${mono.variable}`}
     >
       <body className="font-sans antialiased">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <SiteHeader />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

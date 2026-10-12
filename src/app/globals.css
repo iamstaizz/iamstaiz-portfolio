@@ -13,6 +13,14 @@
   --color-brand-700: #4f1aa8;
 
   --color-pop: #ff2ec4;
+
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 @theme inline {

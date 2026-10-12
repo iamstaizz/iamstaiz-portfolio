@@ -1,12 +1,19 @@
 {
   "Metadata": {
-    "title": "iamstaiz | Full-stack developer",
+    "title": "iamstaiz | Full-stack ",
     "description": "Portfolio of iamstaiz: full-stack projects, skills and experiments."
   },
-  "Home": {
-    "role": "full-stack developer",
-    "intro": "Hi! I build web products end to end: from database to pixels.",
+  "Nav": {
+    "about": "About",
     "projects": "Projects",
+    "skills": "Skills",
     "contact": "Contact"
+  },
+  "Hero": {
+    "status": "Open to work",
+    "role": "Full-stack developer",
+    "intro": "I build web products end to end: from database to pixels.",
+    "ctaProjects": "See projects",
+    "ctaContact": "Get in touch"
   }
 }
