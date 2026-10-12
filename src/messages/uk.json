@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "iamstaiz | Full-stack ",
+    "title": "iamstaiz | Full-stack розробниця",
     "description": "Портфоліо iamstaiz: full-stack проєкти, навички та експерименти."
   },
   "Nav": {
@@ -15,5 +15,14 @@
     "intro": "Я створюю вебпродукти від початку до кінця: від бази даних до пікселів.",
     "ctaProjects": "Дивитись проєкти",
     "ctaContact": "Зв'язатись"
+  },
+  "Projects": {
+    "title": "Проєкти",
+    "stack": "Стек",
+    "topic": "Тема",
+    "all": "Усі",
+    "empty": "Поки немає проєктів за цими фільтрами.",
+    "live": "Демо",
+    "code": "Код"
   }
 }

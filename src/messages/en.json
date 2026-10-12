@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "iamstaiz | Full-stack ",
+    "title": "iamstaiz | Full-stack developer",
     "description": "Portfolio of iamstaiz: full-stack projects, skills and experiments."
   },
   "Nav": {
@@ -15,5 +15,14 @@
     "intro": "I build web products end to end: from database to pixels.",
     "ctaProjects": "See projects",
     "ctaContact": "Get in touch"
+  },
+  "Projects": {
+    "title": "Projects",
+    "stack": "Stack",
+    "topic": "Topic",
+    "all": "All",
+    "empty": "No projects match these filters yet.",
+    "live": "Live",
+    "code": "Code"
   }
 }
