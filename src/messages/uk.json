@@ -1,0 +1,12 @@
+{
+  "Metadata": {
+    "title": "iamstaiz | Full-stack розробниця",
+    "description": "Портфоліо iamstaiz: full-stack проєкти, навички та експерименти."
+  },
+  "Home": {
+    "role": "full-stack розробниця",
+    "intro": "Привіт! Я створюю вебпродукти від бази даних до пікселів.",
+    "projects": "Проєкти",
+    "contact": "Контакти"
+  }
+}

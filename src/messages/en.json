@@ -1,0 +1,12 @@
+{
+  "Metadata": {
+    "title": "iamstaiz | Full-stack developer",
+    "description": "Portfolio of iamstaiz: full-stack projects, skills and experiments."
+  },
+  "Home": {
+    "role": "full-stack developer",
+    "intro": "Hi! I build web products end to end: from database to pixels.",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}
