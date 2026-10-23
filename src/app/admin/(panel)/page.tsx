@@ -40,12 +40,20 @@ export default async function AdminHome() {
           </li>
         ))}
       </ul>
-      <Link
-        href="/admin/projects"
-        className="border-ink bg-brand-600 mt-10 inline-block rounded-full border-2 px-6 py-3 font-semibold text-white shadow-[4px_4px_0_0_var(--color-ink)] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0_0_var(--color-ink)]"
-      >
-        Manage projects →
-      </Link>
+      <div className="mt-10 flex flex-wrap gap-4">
+        {[
+          { href: "/admin/projects", label: "Manage projects →" },
+          { href: "/admin/tags", label: "Manage tags →" },
+        ].map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className="border-ink bg-brand-600 inline-block rounded-full border-2 px-6 py-3 font-semibold text-white shadow-[4px_4px_0_0_var(--color-ink)] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0_0_var(--color-ink)]"
+          >
+            {item.label}
+          </Link>
+        ))}
+      </div>
     </main>
   );
 }

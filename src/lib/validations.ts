@@ -67,3 +67,17 @@ export function parseProjectForm(formData: FormData) {
   };
 }
 export type ProjectFormValues = ReturnType<typeof parseProjectForm>;
+
+export const tagSchema = z.object({
+  name: z.string().trim().min(1, "Required").max(40),
+  type: z.enum(["STACK", "TOPIC"]),
+});
+
+export function slugify(value: string) {
+  return value
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
