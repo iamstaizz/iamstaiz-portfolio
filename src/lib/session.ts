@@ -1,6 +1,7 @@
 import "server-only";
 import { SignJWT, jwtVerify } from "jose";
 import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 
 const COOKIE = "admin_session";
 const MAX_AGE = 60 * 60 * 24 * 7; // 7 днів
@@ -45,4 +46,10 @@ export async function getSession() {
 
 export async function destroySession() {
   (await cookies()).delete(COOKIE);
+}
+
+export async function requireAdmin() {
+  const session = await getSession();
+  if (!session) redirect("/admin/login");
+  return session;
 }

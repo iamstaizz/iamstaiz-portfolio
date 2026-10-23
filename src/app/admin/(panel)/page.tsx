@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/prisma";
 import { logout } from "../actions";
+import Link from "next/link";
 
 export default async function AdminHome() {
   const [projects, published, unread] = await Promise.all([
@@ -39,6 +40,12 @@ export default async function AdminHome() {
           </li>
         ))}
       </ul>
+      <Link
+        href="/admin/projects"
+        className="border-ink bg-brand-600 mt-10 inline-block rounded-full border-2 px-6 py-3 font-semibold text-white shadow-[4px_4px_0_0_var(--color-ink)] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0_0_var(--color-ink)]"
+      >
+        Manage projects →
+      </Link>
     </main>
   );
 }
